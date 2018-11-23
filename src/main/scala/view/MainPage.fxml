@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane depthTest="DISABLE" focusTraversable="true" nodeOrientation="LEFT_TO_RIGHT" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: #FFEC8B;" xmlns="http://javafx.com/javafx/8.0.131" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainPage">
+    <stylesheets>
+        <URL value="@Main.css" />
+    </stylesheets>
+    <top>
+        <Label alignment="CENTER" prefHeight="30" prefWidth="Infinity" text="2^n" textAlignment="CENTER" textFill="#683a01">
+            <font>
+                <Font name="System Bold" size="100.0" />
+            </font>
+        </Label>
+    </top>
+    <center>
+        <GridPane alignment="TOP_CENTER" hgap="10" vgap="10">
+            <Button fx:id="btnStart" contentDisplay="TEXT_ONLY" layoutX="266.0" layoutY="203.0" onAction="#startGame" prefHeight="211.0" prefWidth="359.0" text="START" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                <cursor>
+                    <Cursor fx:constant="DEFAULT" />
+                </cursor>
+                <font>
+                    <Font name="System Bold" size="30.0" />
+                </font>
+            </Button>
+
+            <Button fx:id="btnLeaderBoard" onAction="#checkLeaderBoard" prefHeight="211.0" prefWidth="359.0" text="LEADERBOARD" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="0">
+                <font>
+                    <Font name="System Bold" size="30.0" />
+                </font>
+            </Button>
+            <Button fx:id="btnHowToPlay" onAction="#howToPlayGame" prefHeight="211.0" prefWidth="359.0" text="HOW TO PLAY" textFill="WHITE" GridPane.columnIndex="0" GridPane.rowIndex="1">
+                <font>
+                    <Font name="System Bold" size="30.0" />
+                </font>
+            </Button>
+            <Button fx:id="btnSetting" onAction="#exit" mnemonicParsing="false" prefHeight="211.0" prefWidth="359.0" text="EXIT" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                <font>
+                    <Font name="System Bold" size="30.0" />
+                </font>
+            </Button>
+            <padding>
+                <Insets bottom="10" left="10" right="10" top="10" />
+            </padding>
+         <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints />
+            <RowConstraints />
+         </rowConstraints>
+        </GridPane>
+    </center>
+
+</BorderPane>

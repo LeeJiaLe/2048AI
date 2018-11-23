@@ -1,0 +1,46 @@
+.MainTitle{
+    -fx-pref-width:1280px;
+    -fx-alignment:CENTER;
+    -fx-font-size:20px
+}
+
+#btnStart{
+    -fx-background-color: rgb(227,28,61);
+}
+
+#btnStart:hover{
+    -fx-background-color: rgb(255,33,73);
+    -fx-cursor: hand;
+}
+
+#btnLeaderBoard{
+    -fx-background-color: rgb(21,105,206);
+}
+
+#btnLeaderBoard:hover{
+    -fx-background-color: rgb(23,125,253);
+    -fx-cursor: hand;
+}
+
+#btnHowToPlay{
+    -fx-background-color: rgb(217,159,0);
+}
+
+#btnHowToPlay:hover{
+    -fx-background-color: rgb(253,191,0);
+    -fx-cursor: hand;
+}
+
+#btnSetting{
+    -fx-background-color: rgb(43,144,14);
+}
+
+#btnSetting:hover{
+    -fx-background-color: rgb(47,158,16);
+    -fx-cursor: hand;
+}
+
+#btnStartGame,#btnBackToMenu,#btnUndo,#btnDialogOk,#btnDialogCancel{
+    -fx-background-color: #683a01;
+    -fx-cursor: hand;
+}
