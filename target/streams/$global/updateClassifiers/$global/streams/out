@@ -1257,88 +1257,162 @@
 [debug] == resolving dependencies managementsystem#managementsystem$sources;0.1->org.scala-lang#scala-reflect;2.12.6 [scala-tool->master]
 [debug] 	resolved ivy file produced in cache
 [debug] :: downloading artifacts ::
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.6!scala-library.jar(src)
 [debug] 	[NOT REQUIRED] org.scalafx#scalafx_2.12;8.0.102-R11!scalafx_2.12.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
+[debug] 	[NOT REQUIRED] org.xerial#sqlite-jdbc;3.7.2!sqlite-jdbc.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-library;2.12.6!scala-library.jar(src)
+[debug] 	[NOT REQUIRED] org.scalafx#scalafxml-core-sfx8_2.12;0.3!scalafxml-core-sfx8_2.12.jar(src)
 [debug] 	[NOT REQUIRED] org.scalafx#scalafxml-core-macros-sfx8_2.12;0.3!scalafxml-core-macros-sfx8_2.12.jar(src)
 [debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.6!scala-compiler.jar(src)
 [debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
-[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.6!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.xerial#sqlite-jdbc;3.7.2!sqlite-jdbc.jar(src)
-[debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
-[debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
-[debug] 	[NOT REQUIRED] org.scalamacros#paradise_2.12.6;2.1.0!paradise_2.12.6.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-compiler;2.12.6!scala-compiler.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] 	[NOT REQUIRED] org.scalafx#scalafxml-core-sfx8_2.12;0.3!scalafxml-core-sfx8_2.12.jar(src)
+[debug] 	[NOT REQUIRED] org.scalamacros#paradise_2.12.6;2.1.0!paradise_2.12.6.jar(src)
+[debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.6!scala-reflect.jar(src)
 [debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
 [debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
 [debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
 [debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
 [debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
+[debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
+[debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] no default ivy user dir defined: set to C:\Users\Lee Jia Le\.ivy2
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-public.xml
+[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
+[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
+[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
-[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] no default cache defined: set to C:\Users\Lee Jia Le\.ivy2\cache
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-shared.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
 [debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] settings loaded (107ms)
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] settings loaded (77ms)
 [debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
 [debug] 	default resolver: default
 [debug] 	-- 5 resolvers:
 [debug] 	shared [file]
 [debug] 	default [chain] [local, main]
-[debug] settings loaded (106ms)
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] settings loaded (100ms)
 [debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
 [debug] 	default resolver: default
 [debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
 [debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
+[debug] settings loaded (85ms)
+[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] settings loaded (91ms)
+[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] settings loaded (99ms)
+[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] settings loaded (99ms)
+[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] settings loaded (99ms)
+[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] settings loaded (95ms)
+[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
+[debug] 	shared [file]
+[debug] 	default [chain] [local, main]
+[debug] 	public [ibiblio]
+[debug] 	main [chain] [shared, public]
+[debug] 	local [file]
+[debug] settings loaded (96ms)
+[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
+[debug] 	default resolver: default
+[debug] 	-- 5 resolvers:
 [debug] 	shared [file]
 [debug] 	default [chain] [local, main]
 [debug] 	public [ibiblio]
@@ -1353,81 +1427,7 @@
 [debug] 	public [ibiblio]
 [debug] 	main [chain] [shared, public]
 [debug] 	local [file]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (116ms)
-[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-local.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (119ms)
-[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] settings loaded (118ms)
-[debug] 	main [chain] [shared, public]
-[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	local [file]
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] settings loaded (127ms)
-[debug] settings loaded (129ms)
-[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] 	local [file]
-[debug] settings loaded (123ms)
-[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-main-chain.xml
-[debug] including url: jar:file:/C:/Users/Lee%20Jia%20Le/.sbt/boot/scala-2.12.6/org.scala-sbt/sbt/1.2.3/ivy-2.3.0-sbt-b18f59ea3bc914a297bb6f1a4f7fb0ace399e310.jar!/org/apache/ivy/core/settings/ivysettings-default-chain.xml
-[debug] settings loaded (126ms)
-[debug] 	default cache: C:\Users\Lee Jia Le\.ivy2\cache
-[debug] 	default resolver: default
-[debug] 	-- 5 resolvers:
-[debug] 	shared [file]
-[debug] 	default [chain] [local, main]
-[debug] 	public [ibiblio]
-[debug] 	main [chain] [shared, public]
-[debug] 	local [file]
-[debug] :: resolution report :: resolve 683ms :: artifacts dl 152ms
+[debug] :: resolution report :: resolve 954ms :: artifacts dl 130ms
 [debug] 	report for managementsystem#managementsystem$sources;0.1 compile produced in D:\ScalaProject\2048AI\target\scala-2.12\resolution-cache\reports\managementsystem-managementsystem$sources-compile.xml
 [debug] 	report for managementsystem#managementsystem$sources;0.1 runtime produced in D:\ScalaProject\2048AI\target\scala-2.12\resolution-cache\reports\managementsystem-managementsystem$sources-runtime.xml
 [debug] 	report for managementsystem#managementsystem$sources;0.1 test produced in D:\ScalaProject\2048AI\target\scala-2.12\resolution-cache\reports\managementsystem-managementsystem$sources-test.xml
@@ -1439,4 +1439,4 @@
 [debug] 	report for managementsystem#managementsystem$sources;0.1 plugin produced in D:\ScalaProject\2048AI\target\scala-2.12\resolution-cache\reports\managementsystem-managementsystem$sources-plugin.xml
 [debug] 	report for managementsystem#managementsystem$sources;0.1 pom produced in D:\ScalaProject\2048AI\target\scala-2.12\resolution-cache\reports\managementsystem-managementsystem$sources-pom.xml
 [debug] 	report for managementsystem#managementsystem$sources;0.1 scala-tool produced in D:\ScalaProject\2048AI\target\scala-2.12\resolution-cache\reports\managementsystem-managementsystem$sources-scala-tool.xml
-[debug] 	resolve done (683ms resolve - 152ms download)
+[debug] 	resolve done (954ms resolve - 130ms download)
