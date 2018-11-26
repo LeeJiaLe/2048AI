@@ -71,7 +71,7 @@ class GameArea(option:GameOptionData, ratio:Double) extends Group {
   }
 
   var aiFun:String = "D"
-  var depth:Int = 6
+  var depth:Int = 8
 
   //score and move label
   var lblScoreValue:Label = _
@@ -267,7 +267,7 @@ class GameArea(option:GameOptionData, ratio:Double) extends Group {
         if(!(upMove||downMove||leftMove||rightMove)){
           aiFun=="D"
         }else{
-          handleTranslate(AIFunction.checkCommand(gameData,depth).command)
+          handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,gameData,depth).command)
         }
       }
     }
@@ -483,18 +483,18 @@ class GameArea(option:GameOptionData, ratio:Double) extends Group {
 
   def startAI(): Unit ={
     aiFun = "M"
-    handleTranslate(AIFunction.checkCommand(gameData,depth).command)
+    handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,gameData,depth).command)
   }
 
   def stepAI(): Unit ={
     aiFun = "D"
-    handleTranslate(AIFunction.checkCommand(gameData,depth).command)
+    handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,gameData,depth).command)
   }
 
   def stepAIAtDepth(depth:Int): Unit ={
     aiFun = "D"
     if(depth!=0){
-      handleTranslate(AIFunction.checkCommand(gameData,depth).command)
+      handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,gameData,depth).command)
     }else{
       undoMove()
     }

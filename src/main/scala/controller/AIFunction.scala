@@ -3,13 +3,13 @@ package controller
 object AIFunction {
 
 
-  def checkCommand(gameData:Array[Array[Long]],depth:Int): CommandData ={
+  def checkCommand(alpha:Long, beta:Long, gameData:Array[Array[Long]],depth:Int): CommandData ={
     val AIGSList:List[AIGameSquare] = createGameSquares(gameData)
     val availableMove:List[String] = checkAvailableMove(AIGSList)
     var bestCommand:String=if(availableMove.nonEmpty) availableMove.head else ""
-    var bestScore:Long=Long.MaxValue
     val newDepth:Int = depth -1
-
+    val newAlpha:Long = alpha
+    var newBeta:Long = beta
     var i = 0
     var loop:Boolean = i<availableMove.length
     var break:Boolean = false
@@ -17,11 +17,14 @@ object AIFunction {
       //println(move)
       val move:String = availableMove(i)
       val newGameData:Array[Array[Long]] = moveSquare(gameData,move)
-      val score:Long=if(newDepth==0) evaluateMap(newGameData) else checkRandPos(newGameData,newDepth)
+      val score:Long=if(newDepth==0) evaluateMap(newGameData) else checkRandPos(newAlpha, newBeta,newGameData,newDepth)
       //println("depth:"+newDepth+" score:"+score)
-      if(score<bestScore){
-        bestScore=score
+      if(score<newBeta){
+        newBeta=score
         bestCommand=move
+      }
+      if(newAlpha>newBeta){
+        break=true
       }
       i+=1
       loop = i<availableMove.length
@@ -32,15 +35,15 @@ object AIFunction {
     }
 //    println("depth:"+newDepth+" best:"+bestScore)
 //    println("")
-    CommandData(bestScore,bestCommand)
+    CommandData(newBeta,bestCommand)
   }
 
-  def checkRandPos(gameData:Array[Array[Long]],depth:Int): Long ={
-    var bestScore:Long=Long.MinValue
+  def checkRandPos(alpha:Long, beta:Long,gameData:Array[Array[Long]],depth:Int): Long ={
     val size:Int = gameData.length
     val newDepth = depth-1
+    var newAlpha:Long = alpha
+    val newBeta:Long = beta
     var count = 0
-
     var y = 0
     var loop:Boolean = y<size
     var break:Boolean = false
@@ -51,10 +54,13 @@ object AIFunction {
         if(gameData(y)(x)==0){
           count+=1
           val newGameData:Array[Array[Long]] = addSquare(gameData,y,x,1)
-          val score:Long=if(newDepth==0) evaluateMap(newGameData) else checkCommand(newGameData,newDepth).score
+          val score:Long=if(newDepth==0) evaluateMap(newGameData) else checkCommand(newAlpha, newBeta,newGameData,newDepth).score
           //        println("depth:"+newDepth+" score:"+score)
-          if(score>bestScore){
-            bestScore=score
+          if(score>newAlpha){
+            newAlpha=score
+          }
+          if(newAlpha>newBeta){
+            break=true
           }
         }
         x+=1
@@ -71,10 +77,7 @@ object AIFunction {
     }
 //    println("depth:"+newDepth+" best:"+bestScore)
 //    println("")
-    if(count==0){
-      bestScore=Long.MaxValue
-    }
-    bestScore
+    newAlpha
   }
 
   def checkAvailableMove(activeNum:List[AIGameSquare]): List[String] ={
