@@ -107,7 +107,7 @@ object AIFunction {
       var j = 0
       while(j<size){
         if(gameData(i)(j)!=0){
-          AIGSList :+= new AIGameSquare(gameData(i)(j).toInt,Array(i,j))
+          AIGSList :+= new AIGameSquare(gameData(i)(j).toInt,Array(i,j),gameData)
         }
         j+=1
       }
@@ -183,7 +183,7 @@ object AIFunction {
   }
 }
 
-class AIGameSquare(initNumber:Int,pos:Array[Int],undo:Boolean=false){
+class AIGameSquare(initNumber:Int,pos:Array[Int],gameData:Array[Array[Long]],undo:Boolean=false){
   var position:Array[Int]=pos
   var removeNum:Boolean = false
   var finishInitColor:Boolean = undo
@@ -237,7 +237,7 @@ class AIGameSquare(initNumber:Int,pos:Array[Int],undo:Boolean=false){
     var matchValue:Long = 0
     var testPre:Boolean = true
     while(!stop){
-      val currentPosNum:Long=GameSquare.parent.gameData(startY)(startX)
+      val currentPosNum:Long=gameData(startY)(startX)
       if(!reachPlace){
         reachPlace = position(0) == startY && position(1) == startX
         if(currentPosNum==0){
@@ -270,10 +270,10 @@ class AIGameSquare(initNumber:Int,pos:Array[Int],undo:Boolean=false){
       startY+=movY
       stop = (startX<0)||(startX>=GameSquare.size)||(startY<0)||(startY>=GameSquare.size)
       if(reachPlace && (!stop) && testPre && !remove){
-        if(GameSquare.parent.gameData(startY)(startX)!=0){
+        if(gameData(startY)(startX)!=0){
           testPre=false
         }
-        if(GameSquare.parent.gameData(startY)(startX)==this.num){
+        if(gameData(startY)(startX)==this.num){
           valueIncrease=true
         }
       }
