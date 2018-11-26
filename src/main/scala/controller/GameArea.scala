@@ -71,7 +71,7 @@ class GameArea(option:GameOptionData, ratio:Double) extends Group {
   }
 
   var aiFun:String = "D"
-  var depth:Int = 8
+  var depth:Int = 9
 
   //score and move label
   var lblScoreValue:Label = _

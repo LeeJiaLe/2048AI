@@ -7,9 +7,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c48c618-65c7-437c-a031-9770898ec8c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/2048.db" beforeDir="false" afterPath="$PROJECT_DIR$/2048.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/controller/AIFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/controller/AIFunction.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/scala/controller/GameArea.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/controller/GameArea.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controller/AIFunction$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controller/AIFunction$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controller/AIGameSquare$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controller/AIGameSquare$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controller/AIGameSquare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controller/AIGameSquare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controller/CommandData$.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controller/CommandData$.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controller/CommandData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controller/CommandData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/scala-2.12/classes/controller/MiniMax.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/scala-2.12/classes/controller/MiniMax.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -142,12 +149,12 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="scala" value="3177" />
+          <entry key="scala" value="3233" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Scala" value="3177" />
+          <entry key="Scala" value="3233" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -178,11 +185,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/controller/AIFunction.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+            <state relative-caret-position="238">
+              <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
               <folding>
                 <element signature="e#1564#2973#0" />
                 <element signature="e#2977#3367#0" />
@@ -210,11 +217,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/controller/GameArea.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7412">
-              <caret line="496" column="74" selection-start-line="496" selection-start-column="74" selection-end-line="496" selection-end-column="74" />
+            <state relative-caret-position="323">
+              <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
               <folding>
                 <element signature="e#20#61#0" expanded="true" />
               </folding>
@@ -303,8 +310,8 @@
         <option value="$PROJECT_DIR$/src/main/scala/controller/MainApp.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/controller/GameSquare.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/controller/Game.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/controller/AIFunction.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/controller/GameArea.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/controller/AIFunction.scala" />
       </list>
     </option>
   </component>
@@ -785,10 +792,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/controller/GameArea.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="73" column="19" selection-start-line="73" selection-start-column="19" selection-end-line="73" selection-end-column="19" />
+          <folding>
+            <element signature="e#20#61#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/controller/Game.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/controller/AIFunction.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="8" column="80" selection-start-line="8" selection-start-column="80" selection-end-line="8" selection-end-column="80" />
+        <state relative-caret-position="238">
+          <caret line="32" column="10" selection-start-line="32" selection-start-column="10" selection-end-line="32" selection-end-column="10" />
           <folding>
             <element signature="e#1564#2973#0" />
             <element signature="e#2977#3367#0" />
@@ -802,23 +826,6 @@
             <element signature="e#8906#9519#0" />
             <element signature="e#9523#10031#0" />
             <element signature="e#5043#8319#1" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/controller/Game.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-204">
-          <caret line="31" column="29" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/controller/GameArea.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7412">
-          <caret line="496" column="74" selection-start-line="496" selection-start-column="74" selection-end-line="496" selection-end-column="74" />
-          <folding>
-            <element signature="e#20#61#0" expanded="true" />
           </folding>
         </state>
       </provider>

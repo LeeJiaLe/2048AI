@@ -23,13 +23,14 @@ object AIFunction {
         newBeta=score
         bestCommand=move
       }
-      if(newAlpha>newBeta){
-        break=true
-      }
+
+      break = newAlpha>=newBeta
+
       i+=1
       loop = i<availableMove.length
 
       if(break){
+        //println("hi")
         loop=false
       }
     }
@@ -59,9 +60,7 @@ object AIFunction {
           if(score>newAlpha){
             newAlpha=score
           }
-          if(newAlpha>newBeta){
-            break=true
-          }
+          break = newAlpha>=newBeta
         }
         x+=1
         loop2 = x<size
