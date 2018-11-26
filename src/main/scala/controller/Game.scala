@@ -38,6 +38,8 @@ class Game(
         gameArea.stopAI
       }else if(keyValue=="L"){
         gameArea.stepAI
+      }else if(keyValue.matches("^\\d+$")){
+        gameArea.stepAIAtDepth(keyValue.toInt)
       }else{
         gameArea.handleTranslate(key.code.toString())
       }

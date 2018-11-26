@@ -9,6 +9,7 @@ object AIFunction {
     var bestCommand:String=""
     var bestScore:Long=Long.MaxValue
     val newDepth:Int = depth -1
+
     for(move:String<-availableMove){
       //println(move)
       val newGameData:Array[Array[Long]] = moveSquare(gameData,move)
@@ -283,4 +284,6 @@ class AIGameSquare(initNumber:Int,pos:Array[Int],undo:Boolean=false){
     this.num +=1
   }
 }
+
+
 case class CommandData(score:Long,command:String)
