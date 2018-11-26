@@ -6,18 +6,28 @@ object AIFunction {
   def checkCommand(gameData:Array[Array[Long]],depth:Int): CommandData ={
     val AIGSList:List[AIGameSquare] = createGameSquares(gameData)
     val availableMove:List[String] = checkAvailableMove(AIGSList)
-    var bestCommand:String=""
+    var bestCommand:String=if(availableMove.nonEmpty) availableMove.head else ""
     var bestScore:Long=Long.MaxValue
     val newDepth:Int = depth -1
 
-    for(move:String<-availableMove){
+    var i = 0
+    var loop:Boolean = i<availableMove.length
+    var break:Boolean = false
+    while(loop){
       //println(move)
+      val move:String = availableMove(i)
       val newGameData:Array[Array[Long]] = moveSquare(gameData,move)
       val score:Long=if(newDepth==0) evaluateMap(newGameData) else checkRandPos(newGameData,newDepth)
       //println("depth:"+newDepth+" score:"+score)
       if(score<bestScore){
         bestScore=score
         bestCommand=move
+      }
+      i+=1
+      loop = i<availableMove.length
+
+      if(break){
+        loop=false
       }
     }
 //    println("depth:"+newDepth+" best:"+bestScore)
@@ -30,15 +40,33 @@ object AIFunction {
     val size:Int = gameData.length
     val newDepth = depth-1
     var count = 0
-    for(y <-0 until size; x <-0 until size){
-      if(gameData(y)(x)==0){
-        count+=1
-        val newGameData:Array[Array[Long]] = addSquare(gameData,y,x)
-        val score:Long=if(newDepth==0) evaluateMap(newGameData) else checkCommand(newGameData,newDepth).score
-//        println("depth:"+newDepth+" score:"+score)
-        if(score>bestScore){
-          bestScore=score
+
+    var y = 0
+    var loop:Boolean = y<size
+    var break:Boolean = false
+    while(loop){
+      var x = 0
+      var loop2:Boolean = x<size
+      while(loop2){
+        if(gameData(y)(x)==0){
+          count+=1
+          val newGameData:Array[Array[Long]] = addSquare(gameData,y,x,1)
+          val score:Long=if(newDepth==0) evaluateMap(newGameData) else checkCommand(newGameData,newDepth).score
+          //        println("depth:"+newDepth+" score:"+score)
+          if(score>bestScore){
+            bestScore=score
+          }
         }
+        x+=1
+        loop2 = x<size
+        if(break){
+          loop2=false
+        }
+      }
+      y+=1
+      loop = y<size
+      if(break){
+        loop=false
       }
     }
 //    println("depth:"+newDepth+" best:"+bestScore)
@@ -116,14 +144,14 @@ object AIFunction {
     AIGSList
   }
 
-  def addSquare(gameData:Array[Array[Long]],y:Int,x:Int): Array[Array[Long]] ={
+  def addSquare(gameData:Array[Array[Long]],y:Int,x:Int,z:Int): Array[Array[Long]] ={
     val size = gameData.length
     val newGameData:Array[Array[Long]]=Array.ofDim[Long](size,size)
     var i = 0
     while(i<size){
       var j = 0
       while(j<size){
-        newGameData(i)(j)=if(i==y && j==x) 1 else gameData(i)(j)
+        newGameData(i)(j)=if(i==y && j==x) z else gameData(i)(j)
        // print(newGameData(i)(j))
         j+=1
       }
@@ -182,6 +210,188 @@ object AIFunction {
     score/count
   }
 }
+
+class MiniMax(){
+  def checkCommand(gameData:Array[Array[Long]],depth:Int): CommandData ={
+    val AIGSList:List[AIGameSquare] = createGameSquares(gameData)
+    val availableMove:List[String] = checkAvailableMove(AIGSList)
+    var bestCommand:String=if(availableMove.nonEmpty) availableMove.head else ""
+    var bestScore:Long=Long.MaxValue
+    val newDepth:Int = depth -1
+
+    for(move:String<-availableMove){
+      //println(move)
+      val newGameData:Array[Array[Long]] = moveSquare(gameData,move)
+      val score:Long=if(newDepth==0) evaluateMap(newGameData) else checkRandPos(newGameData,newDepth)
+      //println("depth:"+newDepth+" score:"+score)
+      if(score<bestScore){
+        bestScore=score
+        bestCommand=move
+      }
+    }
+    //    println("depth:"+newDepth+" best:"+bestScore)
+    //    println("")
+    CommandData(bestScore,bestCommand)
+  }
+
+  def checkRandPos(gameData:Array[Array[Long]],depth:Int): Long ={
+    var bestScore:Long=Long.MinValue
+    val size:Int = gameData.length
+    val newDepth = depth-1
+    var count = 0
+    for(y <-0 until size; x <-0 until size;z <- 1 until 2){
+      if(gameData(y)(x)==0){
+        count+=1
+        val newGameData:Array[Array[Long]] = addSquare(gameData,y,x,z)
+        val score:Long=if(newDepth==0) evaluateMap(newGameData) else checkCommand(newGameData,newDepth).score
+        //        println("depth:"+newDepth+" score:"+score)
+        if(score>bestScore){
+          bestScore=score
+        }
+      }
+    }
+    //    println("depth:"+newDepth+" best:"+bestScore)
+    //    println("")
+    if(count==0){
+      bestScore=Long.MaxValue
+    }
+    bestScore
+  }
+
+  def checkAvailableMove(activeNum:List[AIGameSquare]): List[String] ={
+    var upMove =false
+    var downMove = false
+    var leftMove = false
+    var rightMove = false
+    val commandList:List[String]=List(
+      "LEFT",
+      "DOWN",
+      "RIGHT",
+      "UP"
+    )
+
+    var availableCommand:List[String] = List()
+
+    //loop through the up, down, left and right command
+    for(command<-commandList){
+      //loop through all active num to check is there any move
+      for(num<-activeNum){
+        val translateInfo:TranslateInfo=num.getTranslateInfo(command)
+        val allowMove:Boolean = (translateInfo.translateValueY!=0)||(translateInfo.translateValueX!=0)
+
+        if(allowMove){
+          if(command=="UP"){
+            if(!upMove){
+              upMove=allowMove
+              availableCommand :+= "UP"
+            }
+          }else if(command=="DOWN"){
+            if(!downMove){
+              downMove=allowMove
+              availableCommand :+= "DOWN"
+            }
+          }else if(command=="LEFT"){
+            if(!leftMove){
+              leftMove=allowMove
+              availableCommand :+= "LEFT"
+            }
+          }else if(command=="RIGHT"){
+            if(!rightMove){
+              rightMove=allowMove
+              availableCommand :+= "RIGHT"
+            }
+          }
+        }
+        //enable command if there's a move on any square
+      }
+    }
+    availableCommand
+  }
+
+  def createGameSquares(gameData:Array[Array[Long]]):List[AIGameSquare]={
+    val size:Int = gameData.length
+    var AIGSList:List[AIGameSquare] = List()
+    var i = 0
+    while(i<size){
+      var j = 0
+      while(j<size){
+        if(gameData(i)(j)!=0){
+          AIGSList :+= new AIGameSquare(gameData(i)(j).toInt,Array(i,j),gameData)
+        }
+        j+=1
+      }
+      i+=1
+    }
+    AIGSList
+  }
+
+  def addSquare(gameData:Array[Array[Long]],y:Int,x:Int,z:Int): Array[Array[Long]] ={
+    val size = gameData.length
+    val newGameData:Array[Array[Long]]=Array.ofDim[Long](size,size)
+    var i = 0
+    while(i<size){
+      var j = 0
+      while(j<size){
+        newGameData(i)(j)=if(i==y && j==x) z else gameData(i)(j)
+        // print(newGameData(i)(j))
+        j+=1
+      }
+      //      println("")
+      i+=1
+    }
+    //    println("")
+
+    newGameData
+  }
+
+  def moveSquare(gameData:Array[Array[Long]],command:String):Array[Array[Long]] ={
+    val size = gameData.length
+    val newGameData:Array[Array[Long]]=Array.ofDim[Long](size,size)
+    var i = 0
+    val AIGSList:List[AIGameSquare] = createGameSquares(gameData)
+    while(i<size){
+      var j = 0
+      while(j<size){
+        newGameData(i)(j)=0
+        j+=1
+      }
+      i+=1
+    }
+
+    for(gs:AIGameSquare <- AIGSList){
+      val tf:TranslateInfo=gs.getTranslateInfo(command)
+      if(!tf.remove){
+        newGameData(tf.newPosY)(tf.newPosX)=if(tf.increase) gs.num+1 else gs.num
+      }
+    }
+    newGameData
+  }
+
+  def evaluateMap(gameData:Array[Array[Long]]): Long ={
+    var score:Long = 0
+    val size:Int = gameData.length
+    var count:Int= 1
+    var k = 0
+    while(k<size){
+      var l = 0
+      while(l<size){
+        if(gameData(k)(l)==0){
+          count+=1
+        }
+        if((k+1)!=size){
+          score+=Math.abs(gameData(k)(l)-gameData(k+1)(l))
+        }
+        if((l+1)!=size){
+          score+=Math.abs(gameData(k)(l)-gameData(k)(l+1))
+        }
+        l+=1
+      }
+      k+=1
+    }
+    score/count
+  }
+}
+
 
 class AIGameSquare(initNumber:Int,pos:Array[Int],gameData:Array[Array[Long]],undo:Boolean=false){
   var position:Array[Int]=pos

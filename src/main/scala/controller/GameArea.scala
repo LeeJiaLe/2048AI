@@ -71,7 +71,7 @@ class GameArea(option:GameOptionData, ratio:Double) extends Group {
   }
 
   var aiFun:String = "D"
-  var depth:Int = 5
+  var depth:Int = 6
 
   //score and move label
   var lblScoreValue:Label = _
@@ -505,6 +505,7 @@ class GameArea(option:GameOptionData, ratio:Double) extends Group {
     aiFun="D"
   }
 }
+
 
 case class GameOptionData(size:Int, undo:Boolean,numDisplay:String,restrict:String,initRandom:Double,maxRandom:Int)
 case class GameHistory(
