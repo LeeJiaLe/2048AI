@@ -267,7 +267,8 @@ class GameArea(option:GameOptionData, ratio:Double) extends Group {
         if(!(upMove||downMove||leftMove||rightMove)){
           aiFun=="D"
         }else{
-          handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,gameData,depth).command)
+          val allMapAndScore: AllMapAndScore = new AllMapAndScore
+          handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,allMapAndScore,gameData,depth).command)
         }
       }
     }
@@ -483,18 +484,21 @@ class GameArea(option:GameOptionData, ratio:Double) extends Group {
 
   def startAI(): Unit ={
     aiFun = "M"
-    handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,gameData,depth).command)
+    val allMapAndScore: AllMapAndScore = new AllMapAndScore
+    handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,allMapAndScore,gameData,depth).command)
   }
 
   def stepAI(): Unit ={
     aiFun = "D"
-    handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,gameData,depth).command)
+    val allMapAndScore: AllMapAndScore = new AllMapAndScore
+    handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,allMapAndScore,gameData,depth).command)
   }
 
   def stepAIAtDepth(depth:Int): Unit ={
     aiFun = "D"
+    val allMapAndScore: AllMapAndScore = new AllMapAndScore
     if(depth!=0){
-      handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,gameData,depth).command)
+      handleTranslate(AIFunction.checkCommand(Long.MinValue,Long.MaxValue,allMapAndScore,gameData,depth).command)
     }else{
       undoMove()
     }
